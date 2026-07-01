@@ -1,0 +1,10 @@
+{
+  "base_url": "https://www.ebay.com",
+  "headless": true,
+  "slow_mo": 0,
+  "timeout": 30000,
+  "screenshot_on_failure": true,
+  "trace_on_failure": true,
+  "record_video": true,
+  "retry_count": 3
+}

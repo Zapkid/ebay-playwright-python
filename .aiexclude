@@ -1,0 +1,11 @@
+# Google Gemini Code Assist — synced from .llmignore
+# Note: .aiexclude does not support negation (!) patterns.
+
+secured_env_files/ebay-auth.json
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+reports/allure-results/

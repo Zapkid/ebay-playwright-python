@@ -1,0 +1,46 @@
+[
+  {
+    "test_id": "TC001",
+    "description": "Wireless earbuds — mid-price range, 3 items",
+    "search": {
+      "query": "wireless earbuds",
+      "min_price": 15.0,
+      "max_price": 60.0,
+      "limit": 3,
+      "quantity": 1
+    },
+    "cart_validation": {
+      "min_total": 15.0,
+      "max_total": 200.0
+    }
+  },
+  {
+    "test_id": "TC002",
+    "description": "Phone case — lower price band, 2 listings × qty 2",
+    "search": {
+      "query": "phone case",
+      "min_price": 10.0,
+      "max_price": 40.0,
+      "limit": 2,
+      "quantity": 2
+    },
+    "cart_validation": {
+      "min_total": 20.0,
+      "max_total": 160.0
+    }
+  },
+  {
+    "test_id": "TC003",
+    "description": "Vintage watch — wider price band, 4 items",
+    "search": {
+      "query": "vintage watch",
+      "min_price": 5.0,
+      "max_price": 50.0,
+      "limit": 4
+    },
+    "cart_validation": {
+      "min_total": 5.0,
+      "max_total": 250.0
+    }
+  }
+]

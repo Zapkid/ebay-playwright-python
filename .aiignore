@@ -1,0 +1,6 @@
+secured_env_files/ebay-auth.json
+
+*.pem
+*.key
+*.p12
+*.pfx

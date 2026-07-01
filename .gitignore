@@ -1,0 +1,27 @@
+# Secrets — never commit
+secured_env_files/ebay-auth.json
+secured_env_files/shipping-us.json
+
+# Allure & test artifacts
+reports/
+allure-results/
+allure-report/
+.allure/
+screenshots/
+downloads/
+*.png
+*.mp4
+
+# uv / Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# pytest
+.pytest_cache/
+
+# Editor
+.ruff_cache/
+.DS_Store

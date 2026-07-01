@@ -1,0 +1,15 @@
+[
+  {
+    "test_id": "PG001",
+    "description": "USB cable — verify page 2 has mostly new listings",
+    "search": {
+      "query": "usb cable",
+      "min_price": 1.0,
+      "max_price": 50.0,
+      "pages": 2
+    },
+    "pagination_validation": {
+      "max_overlap_ratio": 0.25
+    }
+  }
+]

@@ -1,0 +1,3 @@
+# Ignore session secrets — only .gitignore is tracked in this folder
+*
+!.gitignore

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(secured_env_files/ebay-auth.json)",
+      "Read(secured_env_files/**/ebay-auth.json)"
+    ]
+  }
+}

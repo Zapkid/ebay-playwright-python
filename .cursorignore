@@ -1,0 +1,14 @@
+# Cursor — synced from .llmignore
+# Canonical ignore list for this repo. Synced to tool-specific ignore files.
+
+# eBay session (this project)
+secured_env_files/ebay-auth.json
+
+# Keys and certs
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Test artifacts
+reports/allure-results/

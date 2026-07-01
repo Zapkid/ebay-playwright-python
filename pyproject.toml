@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pages*", "utilities*", "workflows*"]
+
+[project]
+name = "ebay-e2e-tests"
+version = "1.0.0"
+description = "eBay end-to-end test suite — Playwright / Python / pytest / Allure"
+requires-python = ">=3.13"
+dependencies = [
+    "playwright==1.61.0",
+    "pytest>=8.0,<9",
+    "pytest-playwright==0.8.0",
+    "allure-pytest>=2.13,<3",
+    "faker>=33.0,<34",
+    "pytest-xdist>=3.0,<4",
+    "pytest-rerunfailures>=14.0,<15",
+]
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.uv.pip]
+# Lock to major versions — minor/patch resolved by uv lock
+index-url = "https://pypi.org/simple"
+
+[tool.pytest.ini_options]
+testpaths     = ["tests"]
+python_files  = ["test_*.py"]
+python_classes= ["Test*"]
+python_functions = ["test_*"]
+addopts = """
+  --tb=short
+  -s
+  -v
+  --alluredir=reports/allure-results
+  --clean-alluredir
+  --durations=0
+  -p allure_pytest
+"""
+markers = [
+    "smoke: smoke tests",
+    "regression: regression suite",
+    "cart: cart & checkout tests",
+    "search: search workflow tests",
+    "pagination: search pagination tests",
+    "login: authentication tests",
+    "bootstrap: one-time manual auth bootstrap (excluded from default runs)",
+]
+
+# ── Live terminal logging ──────────────────────────────────────────────────
+log_cli            = true
+log_cli_level      = "INFO"
+log_cli_date_format = "%H:%M:%S"
+log_cli_format     = "%(asctime)s  %(levelname)-5s  %(message)s"
+# Silence noisy third-party loggers
+log_level          = "WARNING"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
