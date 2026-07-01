@@ -1,0 +1,43 @@
+name: eBay E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          python-version: "3.13"
+
+      - run: uv sync
+      - run: uv run playwright install --with-deps chromium
+
+      - name: Restore eBay auth session
+        if: ${{ secrets.EBAY_AUTH_JSON_B64 != '' }}
+        run: |
+          mkdir -p secured_env_files
+          echo "${{ secrets.EBAY_AUTH_JSON_B64 }}" | base64 -d > secured_env_files/ebay-auth.json
+          test -s secured_env_files/ebay-auth.json
+
+      - name: Run tests
+        run: |
+          if [ -f secured_env_files/ebay-auth.json ]; then
+            uv run pytest tests/
+          else
+            uv run pytest tests/ -m "not login"
+          fi
+        env:
+          TEST_ENV: preprod
+          HEADLESS: "true"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results
+          path: reports/allure-results/
