@@ -1,31 +1,19 @@
 # eBay E2E Test Suite
 
-[![Playwright](https://img.shields.io/badge/Playwright-1.61-2EAD33?style=flat&logo=playwright&logoColor=white)](https://playwright.dev/)
-[![Python](https://img.shields.io/badge/Python-3.13+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![pytest](https://img.shields.io/badge/pytest-8.x-0A9EDC?style=flat&logo=pytest&logoColor=white)](https://docs.pytest.org/)
-[![Allure](https://img.shields.io/badge/Allure-Report-F87613?style=flat)](https://allurereport.org/)
-[![ebay.com](https://img.shields.io/static/v1?label=&labelColor=505050&message=ebay.com&color=%230066CC&style=flat&logo=ebay&logoColor=white)](https://www.ebay.com/)
-[![Star if useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=Star%20If%20Useful&style=flat&color=BC4E99)](https://github.com/Zapkid/ebay-playwright-python/stargazers)
+![eBay logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/120px-EBay_logo.svg.png)
 
 _End-to-end tests against [ebay.com](https://www.ebay.com) — search, pagination, add-to-cart, and cart-total verification._
-
-[![CI status](https://github.com/Zapkid/ebay-playwright-python/actions/workflows/ci.yml/badge.svg)](https://github.com/Zapkid/ebay-playwright-python/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/Zapkid/ebay-playwright-python?style=flat)](https://github.com/Zapkid/ebay-playwright-python/stargazers)
-[![Forks](https://img.shields.io/github/forks/Zapkid/ebay-playwright-python?style=flat)](https://github.com/Zapkid/ebay-playwright-python/network/members)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Zapkid/ebay-playwright-python?style=flat)](https://github.com/Zapkid/ebay-playwright-python/pulls)
-[![Issues](https://img.shields.io/github/issues/Zapkid/ebay-playwright-python?style=flat)](https://github.com/Zapkid/ebay-playwright-python/issues)
-[![Contributors](https://img.shields.io/github/contributors/Zapkid/ebay-playwright-python?color=2b9348)](https://github.com/Zapkid/ebay-playwright-python/graphs/contributors)
-
-![eBay logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/120px-EBay_logo.svg.png)
 
 [automation-exercise.md](docs/automation-exercise.md) · [Exercise 5: ReadMeAIBugs.md](docs/ReadMeAIBugs.md)
 
 ## ⚡ Technologies
 
-![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
-![Playwright](https://img.shields.io/badge/-Playwright-black?style=flat-square&logo=playwright)
-![pytest](https://img.shields.io/badge/-pytest-black?style=flat-square&logo=pytest)
-![Allure](https://img.shields.io/badge/-Allure-F87613?style=flat-square&logo=allure&logoColor=white)
+[![Playwright](https://img.shields.io/badge/Playwright-1.61-2EAD33?style=flat&logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Python](https://img.shields.io/badge/Python-3.13+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![pytest](https://img.shields.io/badge/pytest-8.x-0A9EDC?style=flat&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Allure](https://img.shields.io/badge/Allure-Report-F87613?style=flat)](https://allurereport.org/)
+[![ebay.com](https://img.shields.io/static/v1?label=&labelColor=505050&message=ebay.com&color=%230066CC&style=flat&logo=ebay&logoColor=white)](https://www.ebay.com/)
+
 ![Chromium](https://img.shields.io/badge/-Chromium-black?style=flat-square&logo=googlechrome)
 ![uv](https://img.shields.io/badge/-uv-DE5FE9?style=flat-square)
 ![Faker](https://img.shields.io/badge/-Faker-black?style=flat-square&logo=python)
@@ -34,6 +22,7 @@ _End-to-end tests against [ebay.com](https://www.ebay.com) — search, paginatio
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![JSON](https://img.shields.io/badge/-JSON-black?style=flat-square&logo=json)
 ![Ruff](https://img.shields.io/badge/-Ruff-black?style=flat-square&logo=ruff)
+[![Star if useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=Star%20If%20Useful&style=flat&color=BC4E99)](https://github.com/Zapkid/ebay-playwright-python/stargazers)
 
 ---
 
