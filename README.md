@@ -1,6 +1,10 @@
 # eBay E2E Test Suite
 
-![eBay logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/120px-EBay_logo.svg.png)
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/120px-EBay_logo.svg.png" alt="eBay logo" width="120" />
+</p>
+<!-- markdownlint-enable MD033 -->
 
 _End-to-end tests against [ebay.com](https://www.ebay.com) — search, pagination, add-to-cart, and cart-total verification._
 
